@@ -23,3 +23,15 @@ return 0;
 
 
 
+//计算两个数的调和平均数
+//调和平均数=1/[(1/x+1/y)/2],化简后为2/(1/x+1/y)
+double harmonic_mean(double x, double y) {
+	return 2/(1 / x + 1 / y) ;
+}
+int main(){
+double num1, num2;
+printf("Enter two numbers:");
+scanf("%lf%lf",&num1,&num2);
+printf("The harmonic mean of %lf and %lf is %lf.\n",num1,num2,harmonic_mean(num1, num2));//链式访问
+return 0;
+}
