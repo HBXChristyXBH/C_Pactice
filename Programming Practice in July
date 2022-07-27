@@ -1,1 +1,25 @@
-  gg
+  //设计一个函数chline(ch,i,j),打印指定字符i行j列
+  void chline(char ch, int row, int column) {
+	int i, j;
+	for (i = 0; i < row; i++) {
+		for (j = 0; j < column; j++) 
+			printf("%c", ch);
+	printf("\n");
+	}
+}
+int main(){
+char ch;
+int row, column;
+printf("请输入需打印的字符:");
+scanf("%c",&ch);
+printf("请输入需打印的行数与列数:\n");
+scanf("%d%d",&row,&column);
+chline(ch, row, column);
+printf("Done!");
+return 0;
+}
+
+
+
+
+
